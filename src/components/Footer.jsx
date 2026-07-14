@@ -1,9 +1,13 @@
-const Footer = () => {
+function Footer() {
   return (
-    <footer className="border-t border-gray-800 py-10 text-center text-gray-500">
-      © 2026 Prakhil Kumar
+    <footer className="bg-black text-gray-400 py-6 text-center border-t border-gray-800">
+
+      <p>
+        © {new Date().getFullYear()} Prakhil Kumar. All rights reserved.
+      </p>
+
     </footer>
   );
-};
+}
 
 export default Footer;

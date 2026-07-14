@@ -3,6 +3,10 @@ import Footer from "./components/Footer";
 import Hero from "./sections/Hero";
 import Experience from "./sections/Experience";
 import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
+import Certificates from "./components/Certificates";
+import CodingProfiles from "./components/CodingProfiles";
 
 function App() {
   return (
@@ -12,7 +16,11 @@ function App() {
       <main className="container">
         <Hero />
         <Experience />
-        <Skills />
+        <Projects/>
+        <Certificates />
+        <Skills /> 
+        <CodingProfiles/>
+        <Contact/>
       </main>
 
       <Footer />

@@ -1,58 +1,155 @@
-import experience from "../data/experience";
 import { motion } from "framer-motion";
-import SectionTitle from "../components/SectionTitle";
 
-const Experience = () => {
+function Experience() {
+  const technologies = [
+    "Java",
+    "Spring Boot",
+    "Spring MVC",
+    "REST APIs",
+    "JPA / Hibernate",
+    "MySQL",
+    "Git",
+    "GitHub",
+    "Postman",
+    "IntelliJ IDEA",
+    "Maven",
+    "Docker",
+    "AI Assisted Development",
+    "GitHub Copilot",
+    "Gemini AI",
+  ];
+
   return (
-    <section id="experience" className="py-28">
+    <section
+      id="experience"
+      className="px-6 md:px-20 py-20 bg-gray-950 text-white"
+    >
 
-      <SectionTitle
-        title="Experience"
-        subtitle="Professional journey"
-      />
+      <h2 className="text-4xl font-bold text-center mb-12">
+        Experience
+      </h2>
 
-      {experience.map((job) => (
 
-        <motion.div
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: -40,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+        viewport={{
+          once: true,
+        }}
+        transition={{
+          duration: 0.6,
+        }}
+        className="
+          max-w-4xl
+          mx-auto
+          bg-gray-900
+          border border-gray-800
+          rounded-2xl
+          p-8
+        "
+      >
 
-          key={job.company}
+        <div className="flex flex-col md:flex-row md:justify-between">
 
-          initial={{ opacity: 0, y: 40 }}
+          <div>
 
-          whileInView={{ opacity: 1, y: 0 }}
+            <h3 className="text-2xl font-semibold">
+              SDE Intern
+            </h3>
 
-          viewport={{ once: true }}
+            <p className="text-blue-400 mt-2 text-lg">
+              MoveInSync
+            </p>
 
-          className="bg-[#161B22] border border-gray-800 rounded-2xl p-8"
+          </div>
 
+
+          <p className="text-gray-400 mt-3 md:mt-0">
+            2026
+          </p>
+
+        </div>
+
+
+        <p className="text-gray-400 mt-6 leading-relaxed">
+          Worked on backend development using Java and Spring Boot,
+          developing REST APIs, integrating databases, and contributing
+          to scalable application features. Used modern development
+          practices and AI-assisted tools to improve productivity,
+          debugging, and code quality.
+        </p>
+
+
+        <ul
+          className="
+            list-disc
+            ml-5
+            mt-6
+            text-gray-300
+            space-y-3
+          "
         >
 
-          <h3 className="text-2xl font-bold">
-            {job.role}
-          </h3>
+          <li>
+            Developed and enhanced backend services using Java and Spring Boot.
+          </li>
 
-          <p className="text-blue-400 mt-2">
-            {job.company}
-          </p>
+          <li>
+            Designed and worked with RESTful APIs for application functionality.
+          </li>
 
-          <p className="text-gray-500 mb-6">
-            {job.duration}
-          </p>
+          <li>
+            Used JPA/Hibernate for database interactions and entity management.
+          </li>
 
-          <ul className="space-y-3 list-disc list-inside text-gray-300">
+          <li>
+            Tested and debugged APIs using Postman and followed Git-based workflows.
+          </li>
 
-            {job.points.map((point) => (
-              <li key={point}>{point}</li>
-            ))}
+          <li>
+            Leveraged AI-assisted development tools like GitHub Copilot and
+            Gemini AI for code assistance, debugging, and improving development
+            efficiency.
+          </li>
 
-          </ul>
+        </ul>
 
-        </motion.div>
 
-      ))}
+        <div className="flex flex-wrap gap-3 mt-8">
+
+          {technologies.map((tech) => (
+
+            <span
+              key={tech}
+              className="
+                px-3
+                py-1
+                rounded-full
+                text-sm
+                bg-blue-600/20
+                text-blue-400
+                border border-blue-500/30
+              "
+            >
+              {tech}
+            </span>
+
+          ))}
+
+        </div>
+
+
+      </motion.div>
+
 
     </section>
   );
-};
+}
 
 export default Experience;
