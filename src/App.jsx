@@ -1,13 +1,17 @@
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Hero from "./sections/Hero";
+
 function App() {
   return (
-    <div className="min-h-screen bg-background text-text">
-      <h1 className="text-5xl text-center pt-32 font-bold">
-        Prakhil Kumar
-      </h1>
+    <div className="bg-[#0D1117] text-white min-h-screen">
+      <Navbar />
 
-      <p className="text-center text-muted mt-4 text-xl">
-        Portfolio is under development...
-      </p>
+      <main className="container">
+        <Hero />
+      </main>
+
+      <Footer />
     </div>
   );
 }
