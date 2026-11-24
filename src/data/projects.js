@@ -1,31 +1,35 @@
+
 const projects = [
   {
-    title: "Online Auction Platform",
+    title: "E-Commerce Microservices",
 
     description:
-      "A full-stack auction platform that allows users to list products, participate in auctions, place bids, manage wallet balance, and purchase premium memberships.",
+      "A microservices-based e-commerce backend built with Spring Boot, enabling scalable shopping workflows through independent services for users, products, cart, orders, payments, and notifications.",
 
     features: [
-      "JWT Authentication & Authorization",
-      "Wallet & Lien Amount Management",
-      "Premium Membership (Silver, Gold, Platinum)",
-      "Real-time Auction Timer",
-      "Bid Management",
-      "REST APIs",
-      "Responsive React UI"
+      "Microservices Architecture",
+      "API Gateway with JWT Authentication",
+      "Request Rate Limiting",
+      "Apache Kafka Event-Driven Communication",
+      "Redis Caching",
+      "Transactional Email Notifications using Brevo",
+      "Docker & Docker Compose",
+      "REST APIs"
     ],
 
     tech: [
-      "React",
-      "Spring Boot",
       "Java",
-      "MySQL",
-      "JWT"
+      "Spring Boot",
+      "Spring Cloud",
+      "Apache Kafka",
+      "Redis",
+      "PostgreSQL",
+      "Docker"
     ],
 
-    github: "https://github.com/prakhilkumar",
+    github: "https://github.com/prakhilkumar/spring-boot-microservices-ecommerce",
 
-    image: "/projects/auction.png"
+    image: "/projects/ecommerce.png"
   },
 
   {
@@ -50,7 +54,7 @@ const projects = [
       "Chrome Extension"
     ],
 
-    github: "https://github.com/prakhilkumar",
+    github: "https://github.com/prakhilkumar/email-replier",
 
     image: "/projects/email.png"
   }
