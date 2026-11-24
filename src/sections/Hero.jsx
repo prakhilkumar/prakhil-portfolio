@@ -45,7 +45,7 @@ const Hero = () => {
 
 
   <Button
-    href="/Prakhil_Resume.pdf"
+    href="/Prakhil's Resume.pdf"
     primary={false}
     download={true}
   >
